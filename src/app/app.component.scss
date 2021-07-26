@@ -1,3 +1,11 @@
+// @import '~@angular/material/theming';
+
+// @use 'sass:map';
+
 .spacer {
   margin: 1rem;
 }
+
+// .border{
+//   border: 2px dotted map.get($css-theme-primary, 500),;
+// }
