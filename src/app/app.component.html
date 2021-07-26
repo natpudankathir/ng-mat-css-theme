@@ -3,7 +3,23 @@
   <button class="spacer" mat-raised-button color="accent">Primary</button>
 </div>
 <div>
-  <mat-checkbox class="spacer" ([ngModel])="checked">Checked</mat-checkbox>
+  <mat-checkbox class="spacer" [(ngModel)]="checked">Checked</mat-checkbox>
 </div>
+<div class="spacer">
+  <mat-form-field class="spacer">
+    <mat-label>Primary Color</mat-label>
+    <input matInput type="text" [(ngModel)]="primaryColor" />
+  </mat-form-field>
 
+  <mat-form-field class="spacer">
+    <mat-label>Secondary Color</mat-label>
+    <input matInput type="text" [(ngModel)]="secondaryColor" />
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="savePrimaryColor(); saveSecondaryColor()"
+  >Update Colour</button>
+</div>
 <router-outlet></router-outlet>
