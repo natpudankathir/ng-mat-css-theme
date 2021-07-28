@@ -5,6 +5,16 @@
 <div>
   <mat-checkbox class="spacer" [(ngModel)]="checked">Checked</mat-checkbox>
 </div>
+<div>Formly content</div>
+<form [formGroup]="form" class="spacer">
+  <formly-form
+    [model]="model"
+    [fields]="fields"
+    [options]="options"
+    [form]="form"
+  ></formly-form>
+</form>
+
 <div class="spacer">
   <mat-form-field class="spacer">
     <mat-label>Primary Color</mat-label>
@@ -20,10 +30,11 @@
     mat-raised-button
     color="primary"
     (click)="savePrimaryColor(); saveSecondaryColor()"
-  >Update Colour</button>
+  >
+    Update Colour
+  </button>
 </div>
-<div  class="spacer border">
-<app-child>
-</app-child>
+<div class="spacer border">
+  <app-child> </app-child>
 </div>
 <router-outlet></router-outlet>

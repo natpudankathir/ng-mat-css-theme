@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { FormGroup } from '@angular/forms';
+import { FormlyFieldConfig, FormlyFormOptions } from '@ngx-formly/core';
 import * as tinycolor from 'tinycolor2';
 
 export interface Color {
@@ -24,12 +25,45 @@ export class AppComponent {
   secondaryColor = '#c2185b';
 
   secondaryColorPalette: Color[] = [];
-
+  form = new FormGroup({});
+  model: any = {};
+  options: FormlyFormOptions = {};
+  fields: FormlyFieldConfig[] = [
+    {
+      key: 'Input',
+      type: 'input',
+      templateOptions: {
+        label: 'Input',
+        placeholder: 'Placeholder',
+        description: 'Description',
+        required: true,
+      },
+    },
+    {
+      key: 'Radio',
+      type: 'radio',
+      templateOptions: {
+        label: 'Radio',
+        placeholder: 'Placeholder',
+        description: 'Description',
+        required: true,
+        options: [
+          { value: 1, label: 'Option 1', checked: true },
+          { value: 2, label: 'Option 2' },
+          { value: 3, label: 'Option 3' },
+          { value: 4, label: 'Option 4', disabled: true },
+        ],
+      },
+    },
+  ];
   constructor() {
     this.savePrimaryColor();
     this.saveSecondaryColor();
   }
 
+  onSubmit() {
+    console.log(this.model);
+  }
   savePrimaryColor() {
     this.primaryColorPalette = computeColors(this.primaryColor);
 
