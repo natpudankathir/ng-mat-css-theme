@@ -48,10 +48,76 @@ export class AppComponent {
         description: 'Description',
         required: true,
         options: [
-          { value: 1, label: 'Option 1', checked: true },
-          { value: 2, label: 'Option 2' },
-          { value: 3, label: 'Option 3' },
-          { value: 4, label: 'Option 4', disabled: true },
+          { value: 1, label: 'Opt 1', checked: true },
+          { value: 2, label: 'Opt 2' },
+          { value: 3, label: 'Opt 3' },
+          { value: 4, label: 'Opt 4', disabled: true },
+        ],
+      },
+    },
+    {
+      key: 'fontSize',
+      type: 'select',
+      defaultValue: 14,
+      templateOptions: {
+        label: 'Font Size',
+        placeholder: 'Font Size',
+        description: 'Select Font Size',
+        required: true,
+        options: [
+          { value: 8, label: '8px' },
+          { value: 10, label: '10px' },
+          { value: 12, label: '12px' },
+          { value: 14, label: '14px' },
+          { value: 16, label: '16px' },
+          { value: 18, label: '18px' },
+          { value: 24, label: '24px' },
+          { value: 30, label: '30px' },
+          { value: 36, label: '36px' },
+          { value: 48, label: '48px' },
+        ],
+      },
+    },
+    {
+      key: 'fontFamily',
+      type: 'select',
+      defaultValue: 'Verdana',
+      templateOptions: {
+        label: 'Font Family',
+        placeholder: 'Font Family',
+        description: 'Select Font Family',
+        required: true,
+        options: [
+          { value: 'Arial', label: 'Arial (sans-serif)' },
+          {
+            value: 'Arial Black',
+            label: 'Arial Black (sans-serif)',
+          },
+          { value: 'Verdana', label: 'Verdana (sans-serif)' },
+          { value: 'Tahoma (sans-serif)', label: 'Tahoma (sans-serif)' },
+          {
+            value: 'Trebuchet MS',
+            label: 'Trebuchet MS (sans-serif)',
+          },
+          { value: 'Impact', label: 'Impact (sans-serif)' },
+          {
+            value: 'Times New Roman',
+            label: 'Times New Roman (serif)',
+          },
+          { value: 'Didot', label: 'Didot (serif)' },
+          { value: 'Georgia', label: 'Georgia (serif)' },
+
+          { value: 'Courier', label: 'Courier (monospace)' },
+          {
+            value: 'Lucida Console',
+            label: 'Lucida Console (monospace)',
+          },
+          { value: 'Monaco', label: 'Monaco (monospace)' },
+          { value: 'Luminari', label: 'Luminari (fantasy)' },
+          {
+            value: 'Comic Sans MS',
+            label: 'Comic Sans MS (cursive)',
+          },
         ],
       },
     },
@@ -63,6 +129,17 @@ export class AppComponent {
 
   onSubmit() {
     console.log(this.model);
+  }
+
+  updateFontFamilyAndSize() {
+    document.documentElement.style.setProperty(
+      '--theme-font-family',
+      this.model.fontFamily
+    );
+    document.documentElement.style.setProperty(
+      '--theme-font-size',
+      this.model.fontSize + 'px'
+    );
   }
   savePrimaryColor() {
     this.primaryColorPalette = computeColors(this.primaryColor);

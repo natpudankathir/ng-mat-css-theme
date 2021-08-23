@@ -9,6 +9,15 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+$custom-typography: mat-typography-config(
+  $font-family: var(--theme-font-family,'Roboto'),
+  $title:         mat-typography-level(calc(20px/ var(--theme-font-size)), calc(32px / var(--theme-font-size)), 500),
+  $body-1:        mat-typography-level( var(--theme-font-size), var(--theme-font-size), 400),
+  $button:        mat-typography-level(var(--theme-font-size), var(--theme-font-size), 500),
+  $input:         mat-typography-level(inherit, 1.125, 400)
+); 
+
+@include angular-material-typography($custom-typography);
 
 // Color palatte with css variables
 $css-theme-primary: (

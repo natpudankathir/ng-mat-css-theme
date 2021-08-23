@@ -16,6 +16,8 @@
 </form>
 
 <div class="spacer">
+ 
+
   <mat-form-field class="spacer">
     <mat-label>Primary Color</mat-label>
     <input matInput type="text" [(ngModel)]="primaryColor" />
@@ -29,9 +31,9 @@
   <button
     mat-raised-button
     color="primary"
-    (click)="savePrimaryColor(); saveSecondaryColor()"
+    (click)="savePrimaryColor(); saveSecondaryColor(); updateFontFamilyAndSize()"
   >
-    Update Colour
+    Update Theme
   </button>
 </div>
 <div class="spacer border">
