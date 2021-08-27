@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/atom-one-dark.min.css">
+
+    <title>NPM Audit Report</title>
+    <meta name="description" content="7 known vulnerabilities found.">
+
+    <style>
+        pre {
+            background-color: #333333;
+            padding: 15px;
+        }
+
+        pre code {
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body class="mb-3">
+    <div class="container">
+        <h1 class="mt-5 text-center">NPM Audit Report</h1>
+
+        <div class="text-center">
+            <div class="card-deck my-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            7
+                        </h5>
+                        <p class="card-text">Known vulnerabilities</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            1,570
+                        </h5>
+                        <p class="card-text">Dependencies</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            August 27th 2021, 9:07:02 am
+                        </h5>
+                        <p class="card-text">Last updated</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck my-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            0
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-danger">critical</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            3
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-warning">high</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            4
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-secondary">moderate</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            0
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-primary">low</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            0
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-info">info</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <table id="advisories" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Module</th>
+                            <th scope="col">Severity</th>
+                            <th scope="col">CVEs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://npmjs.com/advisories/1623" data-toggle="modal" data-target="#advisory-modal-1623">Regular Expression Denial of Service</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/marked" target="_blank"
+                                    rel="noopener">marked</a>
+                            </td>
+                            <td data-order="3"><span
+                                    class="badge badge-secondary">moderate</span></td>
+                            <td>
+                                CWE-400
+                                , CVE-2021-21306
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://npmjs.com/advisories/1679" data-toggle="modal" data-target="#advisory-modal-1679">Regular Expression Denial of Service</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/ua-parser-js" target="_blank"
+                                    rel="noopener">ua-parser-js</a>
+                            </td>
+                            <td data-order="2"><span
+                                    class="badge badge-warning">high</span></td>
+                            <td>
+                                CWE-400
+                                , CVE-2021-27292
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://npmjs.com/advisories/1693" data-toggle="modal" data-target="#advisory-modal-1693">Regular Expression Denial of Service</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/postcss" target="_blank"
+                                    rel="noopener">postcss</a>
+                            </td>
+                            <td data-order="3"><span
+                                    class="badge badge-secondary">moderate</span></td>
+                            <td>
+                                CWE-400
+                                , CVE-2021-23368
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://npmjs.com/advisories/1751" data-toggle="modal" data-target="#advisory-modal-1751">Regular expression denial of service</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/glob-parent" target="_blank"
+                                    rel="noopener">glob-parent</a>
+                            </td>
+                            <td data-order="3"><span
+                                    class="badge badge-secondary">moderate</span></td>
+                            <td>
+                                CWE-400
+                                , CVE-2020-28469
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://npmjs.com/advisories/1771" data-toggle="modal" data-target="#advisory-modal-1771">Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/tar" target="_blank"
+                                    rel="noopener">tar</a>
+                            </td>
+                            <td data-order="2"><span
+                                    class="badge badge-warning">high</span></td>
+                            <td>
+                                CWE-22
+                                , CVE-2021-32803
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1623">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-secondary">moderate</span>
+                        Regular Expression Denial of Service
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/marked" target="_blank"
+                                        rel="noopener">marked</a>
+                                </li>
+                                <li>Published: February 24th 2021 </li>
+                                <li>Reported by: Anonymous</li>
+                                <li>CWE-400</li>
+                                <li>CVE-2021-21306</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &gt;&#x3D;1.1.1 &lt;2.0.0</li>
+                                <li>Patched: &gt;&#x3D;2.0.0</li>
+                                <li>Exploitability: 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p>In affected versions of <code>marked</code>, a Denial of Service attack can affect anyone who processes user generated code.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>npm-audit-html&gt;marked </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 2.0.0 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://github.com/advisories/GHSA-4r62-v4vq-hr96">GitHub Advisory</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-21306">CVE</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://npmjs.com/advisories/1623" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1679">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-warning">high</span>
+                        Regular Expression Denial of Service
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/ua-parser-js" target="_blank"
+                                        rel="noopener">ua-parser-js</a>
+                                </li>
+                                <li>Published: May 6th 2021 </li>
+                                <li>Reported by: Anonymous</li>
+                                <li>CWE-400</li>
+                                <li>CVE-2021-27292</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &gt;&#x3D;0.7.14 &lt;0.7.24</li>
+                                <li>Patched: &gt;&#x3D;0.7.24</li>
+                                <li>Exploitability: 7</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p><code>ua-parser-js</code> &gt;= 0.7.14, fixed in 0.7.24, uses a regular expression which is vulnerable to denial of service. If an attacker sends a malicious User-Agent header, ua-parser-js will get stuck processing it for an extended period of time.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>karma&gt;ua-parser-js </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 0.7.24 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-27292">CVE</a></li>
+<li><a href="https://github.com/advisories/GHSA-78cj-fxph-m83p">GitHub Advisory</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://npmjs.com/advisories/1679" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1693">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-secondary">moderate</span>
+                        Regular Expression Denial of Service
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/postcss" target="_blank"
+                                        rel="noopener">postcss</a>
+                                </li>
+                                <li>Published: May 10th 2021 </li>
+                                <li>Reported by: Anonymous</li>
+                                <li>CWE-400</li>
+                                <li>CVE-2021-23368</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &gt;&#x3D;7.0.0 &lt;7.0.36 || &gt;&#x3D;8.0.0 &lt;8.2.10</li>
+                                <li>Patched: &gt;&#x3D;7.0.36 &lt;8.0.0 || &gt;&#x3D;8.2.10</li>
+                                <li>Exploitability: 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p><code>postcss</code> from 7.0.0 and before version 7.0.36 and 8.2.10 is vulnerable to Regular Expression Denial of Service (ReDoS) during source map parsing.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>@angular-devkit/build-angular&gt;postcss </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 8.2.10 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-23368">CVE</a></li>
+<li><a href="https://github.com/advisories/GHSA-hwj9-h5mp-3pm3">GitHub Advisory</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://npmjs.com/advisories/1693" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1751">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-secondary">moderate</span>
+                        Regular expression denial of service
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/glob-parent" target="_blank"
+                                        rel="noopener">glob-parent</a>
+                                </li>
+                                <li>Published: June 7th 2021 </li>
+                                <li>Reported by: Anonymous</li>
+                                <li>CWE-400</li>
+                                <li>CVE-2020-28469</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;5.1.2</li>
+                                <li>Patched: &gt;&#x3D;5.1.2</li>
+                                <li>Exploitability: 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p><code>glob-parent</code> before 5.1.2 has a regular expression denial of service vulnerability. The enclosure regex used to check for strings ending in enclosure containing path separator.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>@angular-devkit/build-angular&gt;webpack&gt;watchpack&gt;watchpack-chokidar2&gt;chokidar&gt;glob-parent </li>
+                    </ul>
+                    <ul>
+                        <li>@angular-devkit/build-angular&gt;webpack-dev-server&gt;chokidar&gt;glob-parent </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 5.1.2 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-28469">CVE</a></li>
+<li><a href="https://github.com/advisories/GHSA-ww39-953v-wcq6">GitHub Advisory</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://npmjs.com/advisories/1751" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1771">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-warning">high</span>
+                        Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/tar" target="_blank"
+                                        rel="noopener">tar</a>
+                                </li>
+                                <li>Published: August 3rd 2021 </li>
+                                <li>Reported by: Anonymous</li>
+                                <li>CWE-22</li>
+                                <li>CVE-2021-32803</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;3.2.3 || &gt;&#x3D;4.0.0 &lt;4.4.15 || &gt;&#x3D;5.0.0 &lt;5.0.7 || &gt;&#x3D;6.0.0 &lt;6.1.2</li>
+                                <li>Patched: &gt;&#x3D;3.2.3 &lt;4.0.0 || &gt;&#x3D;4.4.15  &lt;5.0.0 || &gt;&#x3D;5.0.7 &lt;6.0.0 || &gt;&#x3D;6.1.2</li>
+                                <li>Exploitability: 8</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p>The <code>tar</code> package has a high severity vulnerability before versions 3.2.3, 4.4.15, 5.0.7, and 6.1.2.</p>
+<h3 id="impact">Impact</h3>
+<p>Arbitrary File Creation, Arbitrary File Overwrite, Arbitrary Code Execution</p>
+<p><code>node-tar</code> aims to prevent extraction of absolute file paths by turning absolute paths into relative paths when the <code>preservePaths</code> flag is not set to <code>true</code>. This is achieved by stripping the absolute path root from any absolute file paths contained in a tar file. For example <code>/home/user/.bashrc</code> would turn into <code>home/user/.bashrc</code>. </p>
+<p>This logic was insufficient when file paths contained repeated path roots such as <code>////home/user/.bashrc</code>. <code>node-tar</code> would only strip a single path root from such paths. When given an absolute file path with repeating path roots, the resulting path (e.g. <code>///home/user/.bashrc</code>) would still resolve to an absolute path, thus allowing arbitrary file creation and overwrite. </p>
+<h3 id="workarounds">Workarounds</h3>
+<p>Users may work around this vulnerability without upgrading by creating a custom <code>onentry</code> method which sanitizes the <code>entry.path</code> or a <code>filter</code> method which removes entries with absolute paths.</p>
+<pre><code class="language-js">const<span class="hljs-built_in"> path</span> = require(<span class="hljs-string">&#x27;path&#x27;</span>)
+const tar = require(<span class="hljs-string">&#x27;tar&#x27;</span>)
+
+tar.x({
+  file: <span class="hljs-string">&#x27;archive.tgz&#x27;</span>,
+  // either add this <span class="hljs-keyword">function</span>...
+  onentry: (entry) =&gt; {
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">(path</span>.isAbsolute(entry<span class="hljs-built_in">.path</span>)) {
+      entry<span class="hljs-built_in">.path</span> = sanitizeAbsolutePathSomehow(entry<span class="hljs-built_in">.path</span>)
+      entry.absolute =<span class="hljs-built_in"> path</span>.resolve(entry<span class="hljs-built_in">.path</span>)
+    }
+  },
+
+  // <span class="hljs-keyword">or</span> this one
+ <span class="hljs-built_in"> filter</span>: (file, entry) =&gt; {
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">(path</span>.isAbsolute(entry<span class="hljs-built_in">.path</span>)) {
+      <span class="hljs-keyword">return</span><span class="hljs-built_in"> false</span>
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span><span class="hljs-built_in"> true</span>
+    }
+  }
+})
+</code></pre>
+<p>Users are encouraged to upgrade to the latest patch versions, rather than attempt to sanitize tar input themselves.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>@angular/cli&gt;@schematics/update&gt;pacote&gt;tar </li>
+                        <li>@angular/cli&gt;pacote&gt;tar </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 3.2.3, 4.4.15, 5.0.7, 6.1.2 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://github.com/npm/node-tar/security/advisories/GHSA-3jfq-g458-7qm9">GitHub Advisory</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-32803">CVE</a></li>
+<li><a href="https://www.npmjs.com/advisories/1770">Related but distinct advisory involving absolute paths</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://npmjs.com/advisories/1771" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#advisories').DataTable({
+                order: [[2, 'asc']]
+            });
+        });
+    </script>
+</body>
+
+</html>
